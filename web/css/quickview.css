@@ -1,0 +1,83 @@
+
+/***** Social Likes **********/
+.quickview {
+	margin: 0em 0 1em;
+	text-align: center;
+	
+}
+.quickview li{
+	float:left;
+	width:25%;
+}
+.quickview li a{
+	display:block;
+	color:#FFF;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;	
+}
+.quickview li a p{
+	padding:15px 0;
+	font-size:0.8em;
+}
+.quickview li a span{
+	display:block;
+	font-size:2em;
+}
+.quickview li a{
+	border-left:2px solid #FFF;
+}
+.quickview li a div.followers{
+	border-bottom: 2px solid #FFFFFF;
+}
+.quickview li:first-child a {
+	border-left:none;
+}
+.quickview li a.tweets{
+	background:#2da5da;
+}
+.quickview li a.tweets:hover{
+  background:#1A91C5;
+}
+.quickview li a.facebook-followers{
+	background:#b6c710;
+}
+.quickview li a.facebook-followers:hover{
+	background:#9EAD0B;
+}
+.quickview li a.email{
+	background:#27c1b9;
+}
+.quickview li a.email:hover{
+  background:#0BB1A8;
+}
+.quickview li a.dribble{
+	background:#cf2555;
+}
+.quickview li a.dribble:hover{
+  background:#B3103E;
+}
+.quickview li a div.qvicon{
+	padding:10px 0;
+}
+.qvicon i{
+	width:45px;
+	height:45px;
+	display:block;
+	background:url(../images/social-icons.png) no-repeat;	
+	margin:0 auto;
+}
+.qvicon i.noticeboard-icon{
+	background-position: 0px 0px;
+}
+.qvicon i.complaints-icon{
+	background-position: -57px 0px;
+}
+.qvicon i.poll-icon{
+	background-position: -114px 0px;
+}
+.qvicon i.sms-icon{
+	background-position: -173px 0px;
+}
+/*----//End-form-section----*/

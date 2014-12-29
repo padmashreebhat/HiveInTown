@@ -1,0 +1,342 @@
+
+.contactUs{
+	width: 500px;
+	height: 300px;
+	background-color: #b4d9e7;	
+	left:100px;
+		padding-bottom: 3em;
+			margin: 2.2em 0;
+}
+
+/* Main Menu details */
+.menu{
+    width:800px;
+    height:52px;
+    position:relative;
+    top:200px;
+    left:100px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.item{
+    position:relative;
+    background-color:#f0f0f0;
+    float:left;
+    width:52px;
+    margin:0px 5px;
+    height:52px;
+    border:2px solid #ddd;
+    -moz-border-radius:30px;
+    -webkit-border-radius:30px;
+    border-radius:30px;
+    -moz-box-shadow:1px 1px 3px #555;
+    -webkit-box-shadow:1px 1px 3px #555;
+    box-shadow:1px 1px 3px #555;
+    cursor:pointer;
+    overflow:hidden;
+    clear:both;
+}
+
+.link{
+    left:2px;
+    top:2px;
+    position:absolute;
+    width:65px;
+    height:65px;
+}
+.icon_home{
+    background:transparent url(../images/home.png) no-repeat top left;
+}
+.icon_mail{
+    background:transparent url(../images/mail.png) no-repeat top left;
+}
+.icon_help{
+    background:transparent url(../images/help.png) no-repeat top left;
+}
+.icon_find{
+    background:transparent url(../images/find.png) no-repeat top left;
+}
+.icon_photos{
+    background:transparent url(../images/photos.png) no-repeat top left;
+}
+.icon_communication{
+    background:transparent url(../images/communication.png) no-repeat top left;
+}
+.icon_myflat{
+    background:transparent url(../images/myflat.png) no-repeat top left;
+}
+.icon_security{
+    background:transparent url(../images/security.png) no-repeat top left;
+}
+.icon_database{
+    background:transparent url(../images/database.png) no-repeat top left;
+}
+.icon_association{
+    background:transparent url(../images/association.png) no-repeat top left;
+}
+.icon_storage{
+    background:transparent url(../images/storage.png) no-repeat top left;
+}
+.icon_finance{
+    background:transparent url(../images/finance.png) no-repeat top left;
+}
+.item_content{
+    position:absolute;
+    height:52px;
+    width:220px;
+    overflow:hidden;
+    left:56px;
+    top:7px;
+    background:transparent;
+    display:none;
+}
+.item_content h2{
+    color:#4244a4;
+    text-shadow: 1px 1px 1px #fff;
+    background-color:transparent;
+    font-size:14px;
+}
+.item_content a{
+    background-color:transparent;
+    float:left;
+    margin-right:7px;
+    margin-top:3px;
+    color:#bbb;
+    text-shadow: 1px 1px 1px #fff;
+    text-decoration:none;
+    font-size:12px;
+}
+.item_content a:hover{
+    color:#0b965b;
+}
+.item_content p {
+    background-color:transparent;
+    display:none;
+}
+.item_content p input{
+    border:1px solid #ccc;
+    padding:1px;
+    width:155px;
+    float:left;
+    margin-right:5px;
+}
+
+/* Sub Menu details */
+.submenutitle{
+	float:left;
+	text-align: center;
+font-size: 20px;
+padding: 0px 46px 0px 19px;
+}
+
+.submenuitem{
+    position:relative;
+    background-color:#f0f0f0;
+    float:right;
+    width:75px;
+    margin:0px 5px;
+    height:75px;
+    border:2px solid #ddd;
+    -moz-border-radius:30px;
+    -webkit-border-radius:30px;
+    border-radius:30px;
+    -moz-box-shadow:1px 1px 3px #555;
+    -webkit-box-shadow:1px 1px 3px #555;
+    box-shadow:1px 1px 3px #555;
+    cursor:pointer;
+    overflow:hidden;
+    clear:both;
+    float: left;
+}
+
+.link{
+    left:2px;
+    top:2px;
+    position:absolute;
+    width:65px;
+    height:65px;
+}
+.icon_mom{
+    background:transparent url(../images/mom.jpg) no-repeat top left;
+}
+.icon_seal{
+    background:transparent url(../images/seal.jpg) no-repeat top left;
+}
+.icon_members{
+    background:transparent url(../images/members.jpg) no-repeat top left;
+}
+.icon_meeting{
+    background:transparent url(../images/meeting.jpg) no-repeat top left;
+}
+.icon_vehicle{
+    background:transparent url(../images/vehicle.jpeg) no-repeat top left;
+}
+.icon_visitor{
+    background:transparent url(../images/visitor.jpg) no-repeat top left;
+}
+.icon_report{
+    background:transparent url(../images/montlyreport.jpeg) no-repeat top left;
+}
+.icon_transaction{
+    background:transparent url(../images/rupee.jpeg) no-repeat top left;
+}
+.icon_family{
+    background:transparent url(../images/family.jpeg) no-repeat top left;
+}
+.icon_guests{
+    background:transparent url(../images/guests.jpg) no-repeat top left;
+}
+.icon_documents{
+    background:transparent url(../images/document.jpeg) no-repeat top left;
+}
+.icon_camera{
+    background:transparent url(../images/camera.jpeg) no-repeat top left;
+}
+.icon_securitycam{
+    background:transparent url(../images/seccamera.jpeg) no-repeat top left;
+}
+.icon_email{
+    background:transparent url(../images/email.jpg) no-repeat top left;
+}
+.icon_sms{
+    background:transparent url(../images/sms.jpg) no-repeat top left;
+}
+.icon_cb{
+    background:transparent url(../images/compliantbox.jpg) no-repeat top left;
+}
+.icon_poll{
+    background:transparent url(../images/poll.jpeg) no-repeat top left;
+}
+.icon_nb{
+    background:transparent url(../images/notice.jpg) no-repeat top left;
+}
+.icon_camera{
+    background:transparent url(../images/camera.jpeg) no-repeat top left;
+}
+.icon_securitycam{
+    background:transparent url(../images/seccamera.jpeg) no-repeat top left;
+}
+.icon_associationdata{
+    background:transparent url(../images/association.jpg) no-repeat top left;
+}
+.icon_employee{
+    background:transparent url(../images/employee.jpg) no-repeat top left;
+}
+.icon_housekeeping{
+    background:transparent url(../images/housekeeping.jpeg) no-repeat top left;
+}
+.icon_instructor{
+    background:transparent url(../images/instructor.jpeg) no-repeat top left;
+}
+.icon_serviceprovider{
+    background:transparent url(../images/serviceprovider.jpeg) no-repeat top left;
+}
+.icon_submit{
+    background:transparent url(../images/submit.jpg) no-repeat top left;
+}
+.icon_find{
+    background:transparent url(../images/find.jpg) no-repeat top left;
+}
+.icon_add{
+    background:transparent url(../images/add.jpeg) no-repeat top left;
+}
+.icon_receipt{
+    background:transparent url(../images/receipt_icon.jpeg) no-repeat top left;
+}
+.icon_view{
+    background:transparent url(../images/viewicon.jpeg) no-repeat top left;
+}
+.icon_print{
+    background:transparent url(../images/printicon.jpeg) no-repeat top left;
+}
+.icon_sms2{
+    background:transparent url(../images/smsicon.jpeg) no-repeat top left;
+}
+.icon_email2{
+    background:transparent url(../images/emailicon.jpeg) no-repeat top left;
+}
+.icon_register{
+    background:transparent url(../images/register_icon.jpeg) no-repeat top left;
+}
+.icon_settings{
+    background:transparent url(../images/settings.jpeg) no-repeat top left;
+}
+.icon_group{
+    background:transparent url(../images/group.jpeg) no-repeat top left;
+}
+.icon_ads{
+    background:transparent url(../images/ads.jpeg) no-repeat top left;
+}
+.icon_logout{
+    background:transparent url(../images/logout.png) no-repeat top left;
+}
+.icon_mom_s{
+    background:transparent url(../images/momicon.jpg) no-repeat top left;
+}
+
+.submenu_item_content{
+    position:absolute;
+    height:52px;
+    width:220px;
+    overflow:hidden;
+    left:56px;
+    top:7px;
+    background:transparent;
+    display:none;
+}
+.submenu_item_content h2{
+    color:#4244a4;
+    text-shadow: 1px 1px 1px #fff;
+    background-color:transparent;
+    font-size:14px;
+}
+.submenu_item_content a{
+    background-color:transparent;
+    float:left;
+    margin-right:7px;
+    margin-top:3px;
+    color:#bababa;
+    text-shadow: 1px 1px 1px #fff;
+    text-decoration:none;
+    font-size:12px;
+}
+.submenu_item_content a:hover{
+    color:#0b965b;
+}
+.submenu_item_content p {
+    background-color:transparent;
+    display:none;
+}
+.item_content p input{
+    border:1px solid #ccc;
+    padding:1px;
+    width:155px;
+    float:left;
+    margin-right:5px;
+}
+
+
+.roundbutton{
+    position:relative;
+    background-color:#f0f0f0;
+    float:right;
+    width:52px;
+    margin:0px 5px;
+    height:52px;
+    border:2px solid #ddd;
+    -moz-border-radius:30px;
+    -webkit-border-radius:30px;
+    border-radius:30px;
+    -moz-box-shadow:1px 1px 3px #555;
+    -webkit-box-shadow:1px 1px 3px #555;
+    box-shadow:1px 1px 3px #555;
+    cursor:pointer;
+    overflow:hidden;
+}
+
+.roundbutton:hover{
+    border-color: #4c92ce;
+}

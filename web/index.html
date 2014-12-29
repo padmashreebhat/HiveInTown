@@ -1,0 +1,500 @@
+
+<html>
+	<head>
+		<title>HiveInTown</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+				<script src="js/svgcheckbx.js"></script>
+
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<link href="css/quickview.css" rel='stylesheet' type='text/css' />
+
+				<link rel="stylesheet" type="text/css" href="css/checkbox.css" />
+		<link href="css/mainmenustyle.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+
+
+<!-- start slider -->
+<link rel="stylesheet" type="text/css" href="css/slider.css" />
+<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+<script type="text/javascript" src="js/jquery.cslider.js"></script>
+
+	<script type="text/javascript">
+			$(function() {
+
+				$('#da-slider').cslider({
+					autoplay : true,
+					bgincrement : 450
+				});
+
+			});
+		</script>
+	</head>
+	<body>
+
+		<div class="main">
+		<div class="helpContent" id="communication">
+			<img  src="images/communication.png" title="people-name" />
+			<h3>Communication</h3>
+			<p> Publish Notice on Notice Board </p>
+			<p> Create Poll </p>
+			<p> Create Complaints </p>
+		</div>
+		<div class="helpContent" id="security">
+			<img  src="images/security.png" title="people-name" />
+			<h3>Security</h3>
+			<p> Register Entry and Exit of vehicles </p>
+			<p> Register Entry and Exit of Visitors </p>
+			<p> Capture Video </p>
+
+		</div>
+		<div class="helpContent" id="storage">
+			<img  src="images/communication.png" title="people-name" />
+			<h3>Storage</h3>
+			<p> Store all Association Documents </p>
+			<p> Store Event Videos/Photos </p>
+
+		</div>
+		<div class="helpContent" id="association">
+			<img  src="images/association.png" title="people-name" />
+			<h3>Association</h3>
+			<p> Create/Send Meeting Request </p>
+			<p> Capture Minutes of Meeting </p>
+			<p> Approve Budgets etc </p>
+
+		</div>
+		<div class="helpContent" id="database">
+			<img  src="images/database.png" title="people-name" />
+			<h3>Database</h3>
+			<p> Maintain Resident Information </p>
+			<p> Maintain Maid/Cook/Driver INform </p>
+			<p> Approve Budgets etc </p>
+
+		</div>
+		<div class="helpContent" id="myself">
+			<img  src="images/home.png" title="people-name" />
+			<h3>Myself</h3>
+			<p> Maintain Apartment Information </p>
+			<p> Maintain Service Provider information</p>
+			<p> Maintain Vehicle Information</p>
+		</div>
+		<div class="helpContent" id="settings">
+			<img  src="images/settings.jpeg" title="people-name" />
+			<h3>Settings</h3>
+		</div>
+		<div class="helpContent" id="finance">
+			<img  src="images/finance.png" title="people-name" />
+			<h3>Finance</h3>
+		</div>
+		
+		<!----Register Form -->
+		 <div class="register">
+		  <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" onclick="closeReg()" alt="Close" /></a>
+		   <div id="reg-Resident">
+	          <h3>Register</h3>
+	          <form id="reg-Resident">
+	            <div>
+	              <label for="fname">FirstName</label>
+	              <input type="text" id="name" spellcheck="false" placeholder="First Name"/>
+	            </div>
+	            <div>
+	              <label for="lname">LastName</label>
+	              <input type="text" id="lname" spellcheck="false" placeholder="Last Name"/>
+	            </div>
+	             <div>
+	              <label for="email">Email</label>
+	              <input type="text" id="email" spellcheck="false" placeholder="email@xyz.com"/>
+	            </div>
+	            <div>
+	              <label for="aptNum">Flat Number</label>
+	              <input type="text" id="aptNum" spellcheck="false" placeholder="Apt Number" />
+	            </div>
+	            <div>
+	              <label for="aptName">Apartment Name</label>
+	              <input type="text" id="aptName" />
+	            </div>
+	            <div>
+	              <label></label>
+	              <input type="submit" value="Submit" id="create-account" class="button"/>
+	              <input type="button" value="New Apartment?" id="create-apt" class="button" onclick="OpenRegisterHive()"/>
+	            </div>
+	          </form>
+		   </div>
+           <div  id="reg-Apt">
+				<h3>Register Hive</h3>
+				<form id="Apt-reg-form">
+				<div>
+					<label for="Apartment Name">Name</label>
+					<input type="text" id="aptName" spellcheck="false" placeholder="Apt Number" />
+            	</div>
+            	<div>
+					<label for="Number of Units">Units</label>
+					<input type="text" id="Units" spellcheck="false" placeholder="Number of Units" />
+            	</div>
+				<div>
+					<label for="Address">Address</label>
+					<input type="text" id="aptAdd" spellcheck="false" placeholder="Address" />
+            	</div>
+	              <input type="submit" value="Submit" id="create-account" class="button"/>
+	              <input type="button" value="CreateUser" id="create-apt" class="button" onclick="registerUser()"/>
+				</form>
+		  </div>
+          
+ 		
+        </div>
+
+		<!----End of Register Form ---->	
+			
+		<!----container---->
+		<div class="container">
+			<!----- content ----->
+			<div class="col-md-12">
+				<img  src="images/body-border.png" title="people-name" />
+
+				<h1>HiveInTown</h1>
+			</div>
+			<div class="4-col-grids">
+				<div class="col-md-1">
+					<div class="1-col-grids">
+					<div id="mainmenu">
+					 <div id=communication class="item">
+		                <a class="link icon_communication"></a>
+		                <div class="item_content">
+		                    <h2>Communication</h2>
+		                </div>
+		            </div>  
+
+					<div id='association' class="item">
+		                <a class="link icon_association"></a>
+		                <div class="item_content">
+		                    <h2>Association</h2>
+		                </div>
+		            </div>
+		            
+		    		<div id='security' class="item">
+		                <a class="link icon_security"></a>
+		                <div class="item_content">
+		                    <h2>Security</h2>
+		                </div>
+		            </div>
+		
+		            <div id='storage' class="item">
+		                <a class="link icon_storage"></a>
+		                <div class="item_content">
+		                    <h2>Storage</h2>
+		                </div>
+		            </div>
+		            
+		            <div id='myself' class="item">
+		                <a class="link icon_myflat"></a>
+		                <div class="item_content">
+		                    <h2>My Apartment</h2>
+		                </div>
+		            </div> 
+		   
+		               <div id='database' class="item">
+		                <a class="link icon_database"></a>
+		                <div class="item_content">
+		                    <h2>Database</h2>
+		                </div>
+		            </div>
+
+		           <div id='settings' class="item">
+		                <a class="link icon_settings"></a>
+		                <div class="item_content">
+		                    <h2>Settings</h2>
+		                </div>
+		            </div>
+		
+		              <div id='finance' class="item">
+		                <a class="link icon_finance"></a>
+		                <div class="item_content">
+		                    <h2>Finance</h2>
+		                </div>
+		            </div>  
+			</div>
+						</div>
+				</div>
+				<!----col-2---->
+				<div class="col-md-4">
+					<div class="2-col-grids">
+						
+						<div class="noticeboard">
+							<h2>Notice Board </h2>
+								<div class="vticker">
+								  <ul>
+									    <li>
+									  	<p>Learn How to change the orientation of your image useing Content-Aware Scale:<a href="#">http://bit.ly/1h2ki3</a></p>
+									  	<span>14 mins ago</span>
+									  </li>
+									  <li>
+									  	<p>Learn How to change the orientation of your image useing Content-Aware Scale:<a href="#">http://bit.ly/1h2ki3</a></p>
+									  	<span>14 mins ago</span>
+									  </li>
+									  <li>
+									  	<p>Learn How to change the orientation of your image useing Content-Aware Scale:<a href="#">http://bit.ly/1h2ki3</a></p>
+									  	<span>14 mins ago</span>
+									  </li>
+								  </ul>
+								</div>
+
+						</div>
+						<div class="slider"><!-- start slider -->
+							<div id="da-slider" class="da-slider">
+									<div class="da-slide">
+										<h2>Feature Update</h2>
+										<p>Smart Card support is available!!  </p>
+									</div>
+									<div class="da-slide">
+										<h2>New Hive added</h2>
+										<p>Sobha Ultima is part of hiveinTown <br> </p>
+									</div>
+									<div class="da-slide">
+										<h2>Offers to all Hive members</h2>
+										<p>50% discount on any purchase <br> </p>
+									</div>
+									<nav class="da-arrows">
+										<span class="da-arrows-prev"></span>
+										<span class="da-arrows-next"></span>
+									</nav>
+							</div>
+						</div><!-- end slider -->
+					</div>
+				</div>
+				<!---//col-2---->
+				<!--- col-3 ---->
+				<div class="col-md-3">
+					<div class="col-3">
+						
+					<!---- calender ---->
+						<div class="calender">
+							<div class="example1" style="margin:0 auto"> </div>
+							<script src="js/jquery.supercal.js"></script> 
+							<script>
+										$('.example1').supercal({
+											transition: 'carousel-vertical'
+										});
+							</script>
+
+						</div>
+						<!---- calender ---->
+
+						<div class="clearfix"> </div>
+					</div>
+				<!--- //col-3 ---->
+				</div>
+				<!--- col-4 ---->
+				<div class="col-4">
+					<div class="col-md-3">
+						<!---- option-menu ---->
+						<script type='text/javascript' src="js/select.js"></script>
+						<div class="option-menu">
+							<form action="#">
+								<p>
+									<select class="turnintodropdown">
+										<option>SwitchHive</option>
+											<option>SobhaUltima</option>
+							  				<option>Exoitca</option>
+							  				<option>Legacy</option>
+									</select>
+								</p>
+							</form>
+						</div> 
+						<!----//option-menu ---->
+
+						<div class="login-form">
+							<h4>LOG IN</h4>
+							<form>
+								<input type="button" value="New User?" onclick="registerUser()" />
+								<input class="fb-btn" type="button" value="Facebook" onclick="SuccessfulLogin()"/>
+								<input class="gl-btn" type="button" value="Google" onclick="SuccessfulLogin()"/>
+								<input class="twi-btn" type="button" value="Twitter" /></li>
+							</form>
+						</div>
+						<!----profile---->
+						<div class="profile text-center">
+							<div class="profile-head">
+								<a href="#"><span> </span></a>
+							</div>
+							<div class="profile-info">
+								<h2><a href="#">Padmashree M.R</a></h2>
+								<span>25B Malachite</span>
+							</div>
+						</div>
+						<!----profile---->
+
+						<!---- copy-right ---->
+						<div class="copy-right">
+						</div>
+						<!---- copy-right ---->
+					</div>
+				</div>
+				<!--- //col-4 ---->
+				<div class="clearfix"> </div>
+			</div>
+			
+						
+			<div class="2-col-grids">
+				<div class="col-md-1">
+				</div>
+									
+				<div class="col-md-6">
+					<div class="quickview">
+				      		 <ul>
+				      		 	<li onclick="OpenNBDetails()"><a href="#" class="tweets"><div class="followers"><p><span>5</span>Notice</p></div><div class="qvicon"><i class="noticeboard-icon"> </i> </div></a></li>
+				      			<li><a href="#" class="facebook-followers"><div class="followers"><p><span>3</span>Compliants</p></div><div class="qvicon"><i class="complaints-icon"> </i> </div></a></li>
+				      			<li><a href="#" class="email"><div class="followers"><p><span>4</span>Approvals</p></div><div class="qvicon"><i class="poll-icon"> </i></div> </a></li>
+				      			<li><a href="#" class="dribble"><div class="followers"><p><span>4</span>Polls</p></div><div class="qvicon"><i class="sms-icon"> </i></div></a></li>
+				      			<div class="clear"> </div>
+				    		</ul>
+		          		</div>
+
+						<div class="Message text-center">
+							<h3>Message</h3> <br>
+							<TEXTAREA id="Detail" NAME="SpecialRequest"  ROWS="8" style="width:450px;">Please enter your Query & Contact details</TEXTAREA>
+							<span><input type="submit" value="Submit" class="btn"/></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+											<!---- to-day --->
+						<div class="to-day text-center">
+							<h3>TODAY</h3>
+							<h1>3</h1>
+							
+							<span>of July 2014</span>
+						</div>
+						<!---- to-day --->
+						<div class="poll">
+						<section>
+							<form class="ac-custom ac-radio ac-fill" autocomplete="off">
+								<h2>When can we have New Year Celebration?</h2>
+								<ul>
+									<li><input id="r1" name="r1" type="radio"><label for="r1">Jan 1st</label></li>
+									<li><input id="r2" name="r1" type="radio"><label for="r2">Jan 3rd</label></li>
+									<li><input id="r3" name="r1" type="radio"><label for="r3">Dec 25th</label></li>
+									<li><input id="r4" name="r1" type="radio"><label for="r4">Dec 26th</label></li>
+									<li><input id="r4" name="r1" type="radio"><label for="r4">WillDoLater</label></li>
+								</ul>
+							</form>
+						</section>
+					</div><!-- /poll -->
+				<script src="js/svgcheckbx.js"></script>
+
+				</div>
+			</div>
+			</div>
+			<!----- content ----->
+		</div>
+		<!----container---->
+		</div>
+	</body>
+									<script type="text/javascript" src="js/jquery.easy-ticker.js"></script>
+									<script type="text/javascript">
+									$(document).ready(function(){
+										$('#demo').hide();
+										$('.vticker').easyTicker();
+									});
+									</script>
+
+	<script>
+		         $('.option-menu').hide();
+		         $('.profile').hide();
+		         $('.register').hide();
+		         $('.noticeboard').hide();
+		         $('.poll').hide();
+		         $('.quickview').hide();
+		         
+		         $('#mainmenu #security').hover(function(e){
+			         $('.helpContent').hide();
+			         $('#security').show();
+		         },function(e){
+			         $('.helpContent').hide();
+		         });
+		         $('#mainmenu #communication').hover(function(e){
+			         $('.helpContent').hide();
+			         $('#communication').show();
+			         		         },function(e){
+			         $('.helpContent').hide();
+		         });
+		         $('#mainmenu #communication').click(function(e){
+			         $('.poll').show(500);
+					 $('.message').hide(500);
+		         });
+		         
+				 $('#mainmenu #finance').hover(function(e){
+			         $('.helpContent').hide();
+			         $('#finance').show();
+		         },function(e){
+			         $('.helpContent').hide();
+		         });
+		         
+				 $('#mainmenu #association').hover(function(e){
+			         $('.helpContent').hide();
+			         $('#association').show();
+		         },function(e){
+			         $('.helpContent').hide();
+		         });
+		         
+				 $('#mainmenu #database').hover(function(e){
+			         $('.helpContent').hide();
+			         $('#database').show();
+		         },function(e){
+			         $('.helpContent').hide();
+		         });
+		         $('#mainmenu #settings').hover(function(e){
+			         $('.helpContent').hide();
+			         $('#settings').show();
+		         },function(e){
+			         $('.helpContent').hide();
+		         });
+		         $('#mainmenu #storage').hover(function(e){
+			         $('.helpContent').hide();
+			         $('#storage').show();
+		         },function(e){
+			         $('.helpContent').hide();
+		         });
+		         $('#mainmenu #myself').hover(function(e){
+			         $('.helpContent').hide();
+			         $('#myself').show();
+		         },function(e){
+			         $('.helpContent').hide();
+		         });
+				 function registerUser(){
+							 $('.register').show();
+							 		$('body').append('<div id="mask"></div>');
+							 		$('#mask').fadeIn(300);
+							 		$('#reg-Apt').hide(500);
+							 		$('#reg-Resident').show(500);
+				 }
+				 function closeReg(){
+					 		  	$('#mask').remove();  
+					 		  	$('.register').hide(500);
+				 }
+				 function OpenRegisterHive(){
+					 $('#reg-Apt').show(500);
+					 $('#reg-Resident').hide(500);
+				 }
+				 function OpenNBDetails(){
+					 alert("NoticeBoardDetails");
+				 }
+				 function SuccessfulLogin(){
+							         $('.profile').show(500);
+							         $('.login-form').hide(500);
+							         $('.option-menu').show(500);
+							         $('.slider').hide(500);
+							         $('.noticeboard').show(500);
+										$('.vticker').easyTicker();
+										$('.poll').show(500);
+										$('.to-day').hide(500);
+										$('.quickview').show(500);
+										$('.message').hide(500);
+				}
+		</script>
+</html>
+
